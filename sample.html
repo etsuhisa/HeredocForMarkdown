@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Heredoc for Markdown</title>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="hd4md.js"></script>
+<script>
+const MD = new HeredocForMarkdown(marked.parse, "view");
+MD.load("md/sample1");
+</script>
+</head>
+<body>
+<div id="view"></div>
+</body>
+</html>
